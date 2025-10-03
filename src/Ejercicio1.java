@@ -4,7 +4,7 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-
+    //productos para registrar
         System.out.print("¿Cuántos productos desea registrar? ");
         int n = sc.nextInt();
         sc.nextLine();

@@ -4,6 +4,7 @@ public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        //numero de estudiantes
         System.out.print("¿Cuantos estudiantes desea evaluar? ");
         int n = sc.nextInt();
 

@@ -11,3 +11,54 @@ void main() {
         IO.println("i = " + i);
     }
 }
+
+import java.util.Scanner;
+
+public class practica {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String password = "AMD1", contra = " ";
+
+
+
+        System.out.println("1. Ver tabla de multiplicar");
+        System.out.println("2. Salir");
+        System.out.print("Elige una opción: ");
+        int opcion = sc.nextInt();
+
+        switch (opcion) {
+            case 1:
+                System.out.print("Ingrese un número para la tabla de multiplicar: ");
+                int m = sc.nextInt();
+                for (int i = 1; i < 12; i++) {
+                    System.out.println("- " + m + "*" + i + "=" + (m * i));
+                }
+                break;
+            case 2:
+                String usuario = "Amy";
+                String password1 = "Amy1";
+                System.out.println("Ingrese su nombre: ");
+                String nombre = sc.nextLine();
+                System.out.println("Ingrese su contrasena: ");
+                String apellido = sc.nextLine();
+
+                if (usuario.equals(nombre) && apellido.equals(password1)) {
+                    System.out.println("Acceso concedido");
+                } else {
+                    System.out.println("Acceso no concedido");
+                }
+                break;
+
+            case 3: while(!(password.equals(contra))){
+                System.out.println("Ingrese su contraseña: ");
+                contra = sc.nextLine();
+            }
+
+            default:
+                System.out.println("Opción no válida.");
+        }
+
+        sc.close();
+
+    }
+}

@@ -4,6 +4,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
 
+       //Pide los datos del usuario
         System.out.print("Ingrese cédula: ");
         String cedula = sc.nextLine();
 
